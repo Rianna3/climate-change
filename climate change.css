@@ -1,0 +1,109 @@
+p {
+  margin: 50px;
+  font-family: "MV Boli";
+  font-style: normal;
+  font-size: 18px;
+  text-decoration: aquamarine;
+  padding-left: 5px;
+}
+img {
+  padding-left: 200px;
+}
+
+h1 {
+  text-shadow: 0px -5px 5px red, 0px 0px 5px yellow;
+  font-size: 50px;
+  /*padding-left: 35%;*/
+  font-family: "Ink Free";
+  background-position: center;
+  background: linear-gradient(bisque, white);
+}
+form {
+  border-style: dotted;
+  border-color: aquamarine;
+}
+html {
+  background: linear-gradient(white, bisque);
+  background-attachment: fixed;
+}
+a:link {
+  color: brown;
+}
+a:visited {
+  color: orangered;
+}
+button:hover {
+  background-color: peru;
+  color: brown;
+}
+#U {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+  background-color: #444444;
+}
+#L {
+  float: left;
+  display: block;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  border-right: 1px solid black;
+  font-size: 17px;
+  min-width: 300px;
+}
+#L:hover {
+  background-color: #222222;
+
+  animation: myGlowanimation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes myGlowanimation {
+  50% {
+    text-shadow: 0px 0px 10px yellow;
+  }
+}
+.search-box {
+  position: absolute;
+  top: 28%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+  background: turquoise;
+  height: 40px;
+  border-radius: 40px;
+  padding: 10px;
+}
+.search-btn {
+  color: white;
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: wheat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-box:hover > .search-txt {
+  width: 240px;
+  padding: 0 6px;
+}
+.search-box:hover > .search-btn {
+  background: white;
+}
+.search-txt {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: white;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 0px;
+  transition: 0.4s;
+}
